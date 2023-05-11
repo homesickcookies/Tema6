@@ -8,7 +8,7 @@ class FizzBuzzTest {
     static int input;
 
     @Test
-    void test1() {
+    void test01() {
         input = 1;
 
         resultadoEsperado = "1";
@@ -17,7 +17,7 @@ class FizzBuzzTest {
         assertEquals(resultadoEsperado, resultadoReal);
     }
     @Test
-    void test2() {
+    void test02() {
         input = 2;
 
         resultadoEsperado = "2";
@@ -26,7 +26,7 @@ class FizzBuzzTest {
         assertEquals(resultadoEsperado, resultadoReal);
     }
     @Test
-    void test3() {
+    void test03() {
         input = 3;
 
         resultadoEsperado = "Fizz";
@@ -35,7 +35,7 @@ class FizzBuzzTest {
         assertEquals(resultadoEsperado, resultadoReal);
     }
     @Test
-    void test4() {
+    void test04() {
         input = 4;
 
         resultadoEsperado = "4";
@@ -44,7 +44,7 @@ class FizzBuzzTest {
         assertEquals(resultadoEsperado, resultadoReal);
     }
     @Test
-    void test5() {
+    void test05() {
         input = 5;
 
         resultadoEsperado = "Buzz";
@@ -53,10 +53,46 @@ class FizzBuzzTest {
         assertEquals(resultadoEsperado, resultadoReal);
     }
     @Test
-    void test6() {
+    void test06() {
         input = 6;
 
         resultadoEsperado = "Fizz";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+    @Test
+    void test07() {
+        input = 7;
+
+        resultadoEsperado = "7";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+    @Test
+    void test08() {
+        input = 8;
+
+        resultadoEsperado = "8";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+    @Test
+    void test09() {
+        input = 9;
+
+        resultadoEsperado = "Fizz";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+    @Test
+    void test10() {
+        input = 10;
+
+        resultadoEsperado = "Buzz";
         resultadoReal = FizzBuzz.getFizzBuzz(input);
 
         assertEquals(resultadoEsperado, resultadoReal);
