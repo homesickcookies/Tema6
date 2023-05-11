@@ -34,4 +34,31 @@ class FizzBuzzTest {
 
         assertEquals(resultadoEsperado, resultadoReal);
     }
+    @Test
+    void test4() {
+        input = 4;
+
+        resultadoEsperado = "4";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+    @Test
+    void test5() {
+        input = 5;
+
+        resultadoEsperado = "Buzz";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+    @Test
+    void test6() {
+        input = 6;
+
+        resultadoEsperado = "Fizz";
+        resultadoReal = FizzBuzz.getFizzBuzz(input);
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
 }
