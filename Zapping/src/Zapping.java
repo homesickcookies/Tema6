@@ -4,8 +4,8 @@ public class Zapping {
             return "0 clics";
         }
 
-        String result = "";
+        int zaps = canalB - canalA;
 
-        return result;
+        return zaps + " clics";
     }
 }
