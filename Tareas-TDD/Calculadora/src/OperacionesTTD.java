@@ -12,7 +12,11 @@ public class OperacionesTTD {
 
         for (String input : inputs) {
 
-            result += Integer.parseInt(input);
+            if (Integer.parseInt(input) >= 1000) {
+                System.err.println("Número superior a 1000 ignorado");
+            } else {
+                result += Integer.parseInt(input);
+            }
         }
 
 

@@ -11,7 +11,8 @@ class OperacionesTTDTest {
             "'1,1,2', 4",
             "'1,1,2', 4",
             "'1,2,', -1",
-            "'1,2,-2', -1"
+            "'1,2,-2', -1",
+            "'5,1002', 5"
     })
     void testCalculadora(String input, int resultadoEsperado){
         int resultadoReal = OperacionesTTD.suma(input);
