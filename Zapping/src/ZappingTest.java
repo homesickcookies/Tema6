@@ -9,8 +9,8 @@ class ZappingTest {
     @CsvSource({
             "0, 0, '0 clics'",
             "1, 2, '1 clics'",
-//            "10, 30, '20 clics'",
-//            "2, 99, '2 clics'",
+            "10, 30, '20 clics'",
+            "2, 99, '2 clics'",
 //            "5, 63, '41 clics'",
 //            "63, 5, '41 clics'"
     })
