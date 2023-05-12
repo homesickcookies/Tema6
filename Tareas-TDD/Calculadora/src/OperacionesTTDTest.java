@@ -8,7 +8,7 @@ class OperacionesTTDTest {
     @CsvSource({
             "'', 0",
             "'1', 1",
-            "'1,2', 3",
+            "'1,1,2', 4",
     })
     void testCalculadora(String input, int resultadoEsperado){
         int resultadoReal = OperacionesTTD.suma(input);
