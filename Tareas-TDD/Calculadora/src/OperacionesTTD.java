@@ -3,7 +3,7 @@ public class OperacionesTTD {
         if (numbers.isEmpty()) {
             return 0;
         }
-        if (numbers.endsWith(",")) {
+        if (numbers.endsWith(",") || numbers.contains("-")) {
             return -1;
         }
 
@@ -11,6 +11,7 @@ public class OperacionesTTD {
         int result = 0;
 
         for (String input : inputs) {
+
             result += Integer.parseInt(input);
         }
 
