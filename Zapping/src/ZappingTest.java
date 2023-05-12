@@ -15,7 +15,7 @@ class ZappingTest {
             "63, 5, '41 clics'",
             "1, 51, '49 clics'"
     })
-    void testCalculadora(int input0, int input1, String resultadoEsperado){
+    void testZapping(int input0, int input1, String resultadoEsperado){
         String resultadoReal = Zapping.contadorZaps(input0, input1);
         assertEquals(resultadoEsperado, resultadoReal);
     }
