@@ -9,6 +9,8 @@ class OperacionesTTDTest {
             "'', 0",
             "'1', 1",
             "'1,1,2', 4",
+            "'1,1,2', 4",
+            "'1,2,', -1",
     })
     void testCalculadora(String input, int resultadoEsperado){
         int resultadoReal = OperacionesTTD.suma(input);

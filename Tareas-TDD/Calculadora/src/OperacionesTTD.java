@@ -1,13 +1,19 @@
 public class OperacionesTTD {
-    public static int suma(String numbers){
-        int result = 0;
-        if (!numbers.equals("")) {
-            String[] inputs = numbers.split(",");
-
-            for (String number : inputs) {
-                result += Integer.parseInt(number);
-            }
+    public static int suma(String numbers) {
+        if (numbers.isEmpty()) {
+            return 0;
         }
+        if (numbers.endsWith(",")) {
+            return -1;
+        }
+
+        String[] inputs = numbers.split(",");
+        int result = 0;
+
+        for (String input : inputs) {
+            result += Integer.parseInt(input);
+        }
+
 
         return result;
     }
