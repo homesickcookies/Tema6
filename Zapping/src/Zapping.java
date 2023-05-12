@@ -1,11 +1,19 @@
 public class Zapping {
-    public static String zap(int canalA, int canalB) {
+    public static String contadorZaps(int canalA, int canalB) {
         int zaps;
 
-        if ((canalA < 50) && (canalB > 50)) {
-            zaps = (canalA + 99) - canalB;
+        if (canalA < canalB) {
+            if (canalA < 50 && canalB > 50) {
+                zaps = (canalA + 99) - canalB;
+            } else {
+                zaps = canalB - canalA;
+            }
         } else {
-            zaps = canalB - canalA;
+            if (canalA > 50 && canalB < 50) {
+                zaps = (canalB + 99) - canalA;
+            } else {
+                zaps = canalA - canalB;
+            }
         }
 
 
