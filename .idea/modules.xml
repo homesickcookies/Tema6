@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tareas-TDD/Calculadora/Calculadora.iml" filepath="$PROJECT_DIR$/Tareas-TDD/Calculadora/Calculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tareas-TDD/Tareas-TDD.iml" filepath="$PROJECT_DIR$/Tareas-TDD/Tareas-TDD.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tema6.iml" filepath="$PROJECT_DIR$/.idea/Tema6.iml" />
     </modules>
