@@ -6,7 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class PasswordVerifyTest {
     @ParameterizedTest
     @CsvSource({
-            "'',false"
+            "'', false",
+            "'hola12', false"
     })
 
     void verifyTest(String input, boolean resultadoEsperado) {
