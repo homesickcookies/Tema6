@@ -8,7 +8,8 @@ class PasswordVerifyTest {
     @CsvSource({
             "'', false",
             "'hola12', false",
-            "'holA', false"
+            "'holA', false",
+            "'hola!', false"
     })
 
     void verifyTest(String input, boolean resultadoEsperado) {
