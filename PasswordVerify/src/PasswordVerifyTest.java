@@ -15,7 +15,8 @@ class PasswordVerifyTest {
             "'hola12A', false",
             "'holacaracola12', false",
             "'holacaracola!', false",
-            "'holacaracolA', false"
+            "'holacaracolA', false",
+            "'ho12A!', false"
     })
 
     void verifyTest(String input, boolean resultadoEsperado) {
