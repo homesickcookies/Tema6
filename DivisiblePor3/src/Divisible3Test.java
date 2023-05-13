@@ -8,7 +8,9 @@ class Divisible3Test {
     @CsvSource({
             "2, 'SI'",
             "6, 'SI'",
-            "4, 'NO'"
+            "4, 'NO'",
+
+            "1234123,'NO'",
     })
 
     void testDibisible3(int input, String resultadoEsperado) {
