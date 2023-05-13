@@ -11,6 +11,7 @@ class Divisible3Test {
             "4, 'NO'",
 
             "1234123,'NO'",
+            "23,'SI'"
     })
 
     void testDibisible3(int input, String resultadoEsperado) {
