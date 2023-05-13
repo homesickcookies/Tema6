@@ -1,6 +1,6 @@
 public class PasswordResult {
-    private boolean isValid;
-    private String errors;
+    private final boolean isValid;
+    private final String errors;
 
     public PasswordResult(boolean isValid, String errors) {
         this.isValid = isValid;

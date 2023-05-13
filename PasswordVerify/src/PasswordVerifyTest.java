@@ -7,35 +7,43 @@ class PasswordVerifyTest {
     //    \nLa contraseña debe tener mínimo 8 caracteres.\nLa contraseña debe tener mínimo 2 números.\nLa contraseña debe tener mínimo 1 caracter especial.\nLa contraseña debe tener mínimo 1 letra mayúscula.
     @ParameterizedTest
     @CsvSource({
-            "'', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres." +
-                    "\nLa contraseña debe tener mínimo 2 números." +
-                    "\nLa contraseña debe tener mínimo 1 caracter especial." +
-                    "\nLa contraseña debe tener mínimo 1 letra mayúscula.'",
-            "'hola12', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres." +
-                    "\nLa contraseña debe tener mínimo 1 caracter especial." +
-                    "\nLa contraseña debe tener mínimo 1 letra mayúscula.'",
-            "'holA', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres." +
-                    "\nLa contraseña debe tener mínimo 2 números." +
-                    "\nLa contraseña debe tener mínimo 1 caracter especial.'",
-            "'hola!', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres." +
-                    "\nLa contraseña debe tener mínimo 2 números." +
-                    "\nLa contraseña debe tener mínimo 1 letra mayúscula.'",
-            "'holaA!', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres." +
-                    "\nLa contraseña debe tener mínimo 2 números.'",
-            "'hola12!', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres."+
-                    "\nLa contraseña debe tener mínimo 1 letra mayúscula.'",
-            "'hola12A', false," +
-                    "'\nLa contraseña debe tener mínimo 8 caracteres." +
-                    "\nLa contraseña debe tener mínimo 1 caracter especial.'",
-            "'holacaracola!', false," +
-                    "'\nLa contraseña debe tener mínimo 2 números." +
-                    "\nLa contraseña debe tener mínimo 1 letra mayúscula.'",
+            """
+                    '', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 2 números.
+                    La contraseña debe tener mínimo 1 caracter especial.
+                    La contraseña debe tener mínimo 1 letra mayúscula.'""",
+            """
+                    'hola12', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 1 caracter especial.
+                    La contraseña debe tener mínimo 1 letra mayúscula.'""",
+            """
+                    'holA', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 2 números.
+                    La contraseña debe tener mínimo 1 caracter especial.'""",
+            """
+                    'hola!', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 2 números.
+                    La contraseña debe tener mínimo 1 letra mayúscula.'""",
+            """
+                    'holaA!', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 2 números.'""",
+            """
+                    'hola12!', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 1 letra mayúscula.'""",
+            """
+                    'hola12A', false,'
+                    La contraseña debe tener mínimo 8 caracteres.
+                    La contraseña debe tener mínimo 1 caracter especial.'""",
+            """
+                    'holacaracola!', false,'
+                    La contraseña debe tener mínimo 2 números.
+                    La contraseña debe tener mínimo 1 letra mayúscula.'""",
             "'holacaracolaA!', false," +
                     "'\nLa contraseña debe tener mínimo 2 números.'",
             "'holacaracola12!', false," +
