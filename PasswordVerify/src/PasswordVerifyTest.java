@@ -7,7 +7,8 @@ class PasswordVerifyTest {
     @ParameterizedTest
     @CsvSource({
             "'', false",
-            "'hola12', false"
+            "'hola12', false",
+            "'holA', false"
     })
 
     void verifyTest(String input, boolean resultadoEsperado) {
