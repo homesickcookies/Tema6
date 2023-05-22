@@ -4,7 +4,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PasswordVerifyTest {
-    //    \nLa contraseña debe tener mínimo 8 caracteres.\nLa contraseña debe tener mínimo 2 números.\nLa contraseña debe tener mínimo 1 caracter especial.\nLa contraseña debe tener mínimo 1 letra mayúscula.
     @ParameterizedTest
     @CsvSource({
             """
